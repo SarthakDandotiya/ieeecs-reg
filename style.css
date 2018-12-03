@@ -1,0 +1,110 @@
+/* HTML tag CSS */
+html {
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+
+body {
+    background-color: #202020;
+    height: 100%;
+    width: 100%;
+}
+
+form {
+    /* background-color: #f1f1f1; */
+    background-color: #f7f7f7;
+    color: black;
+    border-radius: 5px;
+    padding: 0.5em 2em;
+}
+
+p {
+    font-size: 1.3em;
+}
+
+a {
+    color: #FAA41A;
+    text-decoration: underline;
+    background-color: rgba(255, 183, 68, 0.075);
+    padding: 2px 6px;
+    border-radius: 5px;
+}
+
+/* class CSS */
+
+.top {
+    height: 100px;
+    margin: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo {
+    height: 75%;
+    margin: auto;
+}
+
+.form-heading {
+    text-align: center;
+    font-weight: 700;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.button-placement {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.custom-button {
+    color: white;
+    width: 45%;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: #FAA41A !important;
+}
+
+.left {
+    /* padding: 5em; */
+}
+
+.right {
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+
+
+/* label color */
+.input-field label {
+    color: black;
+}
+
+/* label focus color */
+.input-field input:focus+label {
+    color: white !important;
+}
+
+/* label underline focus color */
+.input-field input:focus {
+    border-bottom: 1px solid #FAA41A !important;
+    box-shadow: 0 1px 0 0 #FAA41A !important;
+}
