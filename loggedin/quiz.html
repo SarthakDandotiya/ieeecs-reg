@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
-
     </script>
+    <link rel="stylesheet" href="../node_modules/sal.js/dist/sal.css">
     <link rel="stylesheet" href="quiz.css">
     <title>IEEECS Selection | Quiz</title>
 </head>
@@ -36,7 +36,7 @@
     </div>
 
     <div id="technical_tab" class="col s12">
-        <div class="box tech-q">
+        <div class="box tech-q" data-sal-duration="200" data-sal="fade" data-sal-delay="300" data-sal-easing="ease-in">
             <div class="question">
                 <div>
                     <h5>Question X</h5>
@@ -51,7 +51,7 @@
         </div>
     </div>
     <div id="management_tab" class="col s12">
-        <div class="box mgmt-q">
+        <div class="box mgmt-q" data-sal-duration="200" data-sal="fade" data-sal-delay="300" data-sal-easing="ease-in">
             <div class="question">
                 <div>
                     <h5>Question Y</h5>
@@ -65,7 +65,7 @@
         </div>
     </div>
     <div id="design_tab" class="col s12">
-        <div class="box dsgn-q">
+        <div class="box dsgn-q" data-sal-duration="200" data-sal="fade" data-sal-delay="300" data-sal-easing="ease-in">
             <div class="question">
                 <div>
                     <h5>Question Z</h5>
@@ -79,12 +79,15 @@
         </div>
     </div>
     <div id="modal1" class="modal">
-        <div class="modal-content">
-            <h4>Modal Header</h4>
-            <p>A bunch of text</p>
+        <div class="modal-content" style="color:black;">
+            <h4>Time Up!</h4>
+            <p>Unfortunately your time to finish the test is up, your answers will be saved automatically!
+                <br>
+                You will be contacted shortly if you qualify and proceed for further rounds.
+            </p>
         </div>
         <div class="modal-footer">
-            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Finish</a>
         </div>
     </div>
 
@@ -117,6 +120,12 @@
                 $('modal').closeModal();
             }
         }
+    </script>
+    <script src="../node_modules/sal.js/dist/sal.js"></script>
+    <script>
+        sal({
+            once: true,
+        });
     </script>
 </body>
 

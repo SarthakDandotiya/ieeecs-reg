@@ -43,10 +43,14 @@ body {
     border-radius: 3px;
     /* overflow-y: visible; */
     /* height: 100vh; */
+    -webkit-box-shadow: 0px 1px 25px 0px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 0px 1px 25px 0px rgba(0, 0, 0, 0.55);
+    box-shadow: 0px 1px 25px 0px rgba(0, 0, 0, 0.55);
 }
 
 .q {
     font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
 .watch {
@@ -56,6 +60,10 @@ body {
     padding: 5px;
     border-radius: 2px;
 }
+
+/* .modal-text {
+    color: black !important;
+} */
 
 /* for testing */
 /* .active {
