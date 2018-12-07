@@ -17,6 +17,7 @@ body {
 }
 
 .custom-button {
+    margin-top: 1em;
     color: white;
     width: 10em;
     text-align: center;
@@ -29,8 +30,8 @@ body {
 .info {
     height: 80%;
     background-color: #535353;
-    margin: 0 2em;
-    padding: 1em;
+    margin: 0 1em;
+    padding: 2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,4 +51,18 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+label {
+    color: white;
+}
+
+[type="checkbox"]:checked+span:not(.lever):before {
+    border-right: 2px solid #FAA41A !important;
+    border-bottom: #FAA41A 2px solid !important;
+}
+
+[type="checkbox"]:checked+span:not(.lever):after {
+    border-right: 2px solid #FAA41A !important;
+    border-bottom: #FAA41A 2px solid !important;
 }
