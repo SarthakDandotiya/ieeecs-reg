@@ -1,3 +1,8 @@
+html {
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+
 .custom-logo {
     width: 35%;
     /* margin: 0.2em; */
@@ -17,7 +22,7 @@
 }
 
 .tabs.tabs-transparent .tab a.active {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 /*  */
@@ -41,7 +46,7 @@ body {
 }
 
 .q {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .watch {
